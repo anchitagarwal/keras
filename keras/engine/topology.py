@@ -543,6 +543,7 @@ class Layer(object):
                                      'You can build it manually via: '
                                      '`layer.build(batch_input_shape)`')
             if len(input_shapes) == 1:
+                import pdb; pdb.set_trace()
                 self.build(input_shapes[0])
             else:
                 self.build(input_shapes)
