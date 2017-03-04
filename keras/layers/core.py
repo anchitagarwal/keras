@@ -817,6 +817,7 @@ class Dense(Layer):
         return self.activation(output)
 
     def get_output_shape_for(self, input_shape):
+        import pdb; pdb.set_trace()
         assert input_shape and len(input_shape) >= 2
         assert input_shape[-1] and input_shape[-1] == self.input_dim
         output_shape = list(input_shape)
